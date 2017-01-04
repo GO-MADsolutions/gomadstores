@@ -1,0 +1,10 @@
+/* Empty. Add your own CSS if you like */
+.custom-icon {
+  font-size: 24px;
+  padding: 5px;
+}
+
+.custom-icon.heart {
+
+  color: red;
+}

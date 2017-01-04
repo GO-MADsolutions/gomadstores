@@ -1,0 +1,8 @@
+
+<ion-list>
+  <ion-list ng-repeat="s in hCtrl.subMenuData">
+
+      <ion-item menu-close  ng-click='hCtrl.selectProducts(s.$id)'  ui-sref="app.displayProducts">{{s.$id}}</ion-item>
+  </ion-list>
+
+</ion-list>

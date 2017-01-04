@@ -1,0 +1,20 @@
+<ion-view title="Your Favorite Items">
+  <ion-nav-buttons side="right">
+          <cart-items><cart-items>
+        </ion-nav-buttons>
+  <ion-content>
+    <ion-list>
+        <ion-item collection-repeat="P in Favourites" item-width="50%">
+          <div>
+            <a ui-sref="app.displayProduct" ng-click="hCtrl.selectProduct(P)">
+                <img width="100%" height="250px"src="{{P.Image}}">
+              </a>
+                <div style="text-align: center;">
+                  <strong style="color:black;">{{P.Name}}   </strong>
+                  <strong style="color:black;">{{P.Price |currency}}   </strong>
+<a href="" ng-click="setFav(P)"><i ng-class="{'ion-ios-heart':P.fav, 'ion-ios-heart-outline':!P.fav}"></i></a>
+                </div>
+          </div>
+        </ion-item>
+    </ion-list>
+</ion-view>
